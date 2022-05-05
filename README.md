@@ -123,7 +123,7 @@ Don't forget to give the project a star! Thanks again!
 
 Kay - xucheny@kean.edu
 
-Luna - 
+Luna - qiuh@kean.edu
 
 Project Link: [https://github.com/KatharineXU/GalleryWeb](https://github.com/KatharineXU/GalleryWeb)
 
