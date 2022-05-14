@@ -7,10 +7,10 @@
     <img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h28acinrdaj20u00u0wfb.jpg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Chinese Gallery in the Twentieth Century</h3>
+<h3 align="center">Chinart</h3>
 
   <p align="center">
-    A gallery website displayed in the twentieth century.
+    A chinese gallery website displayed in the twentieth century.
     <br />
     <a href="https://github.com/KatharineXU/GalleryWeb"><strong>Explore the docs »</strong></a>
     <br />
