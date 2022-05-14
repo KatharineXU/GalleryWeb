@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h28acinrdaj20u00u0wfb.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Chinese Gallery in the Twentieth Century</h3>
