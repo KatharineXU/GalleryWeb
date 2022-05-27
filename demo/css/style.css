@@ -1,0 +1,773 @@
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	text-align: center;
+	transition: all 0.1s ease;/* Add transition for hover effects */
+}
+
+a,p,td{
+	font-family: Arial;
+	color: rgb(69, 72, 75);
+}
+
+li,h1,h2{
+	list-style: none;
+	font-family: Arial;
+}
+
+@font-face{
+	font-family: Harukaze;
+  src: url('fonts/Harukaze.ttf') format('TrueType');
+}
+
+@font-face{
+	font-family: Osake;
+  src: url('fonts/Osake.ttf') format('TrueType');
+}
+
+/***
+ *
+ * 
+ *navbar
+ *
+ * 
+ ***/
+#navbar{
+	background-color: rgb(69, 72, 75);
+	margin: 0; 	/*移除浏览器的默认设置将边距和填充设置为0*/
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#navbar .logo{
+	float: left;
+}
+
+#navbar .logo img{
+	width: 75px;
+}
+
+#navbar .nav_title{
+	float: left;
+	margin-top: 10px;
+}
+
+#navbar .nav_title p{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 50px;
+	letter-spacing: 3px;
+	font-family: Harukaze;
+/*	font-family: Osake;
+*/}
+
+#navbar #nav_content{
+	float: right;
+}
+
+#navbar #nav_content ul{
+	margin-top: 20px;
+}
+
+#navbar #nav_content li{
+	display: inline;
+	padding-top: 20px;
+}
+
+
+#navbar #nav_content li a{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	margin:10px;
+	padding: 15px 10px;
+}
+
+
+#navbar #nav_content li.current_page a{
+	border-bottom: 1.5px solid white;
+}
+
+#navbar #nav_content li a:hover{
+	border-bottom: 1.5px solid white;
+	transition-duration: 0.4s;
+  background-color: rgb(69, 72, 75);
+}
+
+#navbar .name_painter{
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+/*----------------------- End of Navbar -----------------------*/
+
+/* **
+ *
+ * Slide Part
+ *
+ * **/
+
+ .slide{
+ 	width: 100%;
+ 	height: 350px;
+ }
+
+ .slide img{
+ 	position: relative;
+ 	width: 100%;
+ 	height: 350px;
+ 	z-index: -3;
+ 	clip:rect(0px 100px 200px 0px);
+ }
+
+.slide .slide_title{
+	position: relative;
+ 	/*background-color: rgba(69, 72, 75, 0.7);*/
+ 	width: 100%;
+ 	height: 350px;
+ 	margin-top: -505px;
+ 	z-index: -2;
+ 	text-align: center;
+}
+
+.slide .slide_title p.slide_word{
+	color: white;
+	font-size: 150px;
+	letter-spacing: 20px;
+	font-family: Harukaze;
+	padding: 100px 0;
+}
+
+.artist_slide{
+	width: 100%;
+	height: 350px;
+}
+
+
+.artist_slide .slide_text{
+	text-align: center;
+	color: rgb(69, 72, 75);
+	margin: 0;
+}
+
+.artist_slide .slide_text h1{
+	margin: 0;
+	padding-top: 50px;
+	line-height: 200%;
+	font-size: 50px;
+}
+
+.artist_slide .slide_text h2{
+	margin: 0;
+	line-height: 200%;
+	font-size: 40px;
+}
+
+.slide_name{
+ text-align: center;
+}
+
+.slide_portrait img{
+ float: left;
+ width: 15%;
+ margin-right: 100px;
+ margin-left: 200px;
+}
+
+.slide_des{
+ margin-top: 30px;
+ float: left;
+ width: 30%;
+}
+
+/*----------------------- End of Slide -----------------------*/
+
+
+/***
+ *
+ * 
+ * Menu Part
+ *
+ *
+ * **/
+#menu_home{
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+#menu_home .menu_all ul{
+	padding-left: 10px;
+}
+
+#menu_home .menu_all li{
+	display: inline-block;
+	margin-right: 50px;
+	padding: 10px 20px;
+}
+
+
+#menu_home .menu_all li a{
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: rgb(69, 72, 75);
+}
+
+#menu_home .menu_all li:hover{
+	background-color: rgb(69,72,75);
+}
+
+#menu_home .menu_all li:hover a{
+	color: #ffffff;
+}
+
+#menu_home .menu_img{
+	display: inline-flex;
+}
+
+#menu_home .menu_img img{
+	width: 23%;
+	padding-right: 20px;
+	margin: 0;
+}
+
+#menu_home .menu_img a{
+	padding: 10px;
+	border: 1.5px solid rgb(69,72,75);
+	height: 20px;
+	position: absolute;
+	bottom: -44px;
+	right: 30px;
+}
+
+#menu_home .menu_img a:hover{
+	color: white;
+	background-color: rgb(69, 72, 75);
+}
+
+#menu_home .menu_gallery li a{
+	text-transform:capitalize;
+}
+
+/*----------------------- End of Menu -----------------------*/
+
+/***
+ *
+ *
+ *introduction cell part
+ *
+ * 
+ * **/
+#intro .title{
+	font-size: 26px;
+	text-align: center;
+}
+
+.intro_cell table{
+	/*border:solid black;*/
+	border-collapse:collapse;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.intro_cell tr,td{
+	/*border: 1px solid black;*/
+	border-spacing: 0px 0px;
+	border-collapse:collapse;
+}
+
+.intro_cell td{
+	width: 50%;
+	height: 400px;
+	font-size: 20px;
+	text-align:justify;
+	line-height: 130%;
+}
+
+.intro_cell img{
+	width: 100%;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+.intro_cell .intro_text{
+	width: 50%;
+	padding: 0 50px;
+	font-size: 20px;
+}
+
+/*.intro_cell #intro_gallery td{
+	height: 250px;
+	padding: 50px 80px;
+}*/
+
+.intro_cell #intro_gallery td .intro_button{
+	width: 130px;
+	height: 50px;
+	border: 2px solid rgb(69, 72, 75);
+	background-color: white;
+	border-radius: 6px;
+	margin-right: 50px;
+	font-size: 18px;
+}
+
+.intro_cell .intro_button:hover{
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*----------------------- End of Introduction Cell -----------------------*/
+
+/***
+ *
+ *painting cell
+ *
+ * **/
+
+#painting{
+	width: 100%;
+	margin-top: 70px;
+}
+
+ .painting_cell{
+ 	display: inline-block;
+ 	width: 27%;
+ 	height: 500px;
+ 	margin: 20px 40px;
+ 	border: 1px solid rgb(69, 72, 75);
+ }
+
+ .painting_cell:hover{
+ 	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+
+.painting_cell .painting_img img{
+	position: relative;
+	height: 500px;
+	width: 100%;
+ 	z-index: -2;
+}
+
+.painting_cell .painting_text{
+ 	position: relative;
+ 	z-index: -1;
+ 	height: 100px;
+ 	background-color: rgba(0, 0, 0, 0.3);
+ 	margin-top: -105px;
+}
+
+.painting_cell .painting_text p{
+ 	color: white;
+ 	padding: 7px 10px;
+ 	margin: 0;
+ 	font-size: 14px;
+}
+
+.painting_cell .painting_text p.painting_name{
+	font-size: 16px;
+}
+
+#painting_list{
+	margin: 0 200px;
+}
+
+#painting_list p.list_title{
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+#painting_list #painting{
+	margin-top: 30px;
+}
+
+#painting_list .painting_cell{
+ 	display: inline-block;
+ 	width: 30%;
+ 	height: 400px;
+ 	margin: 20px 40px;
+ 	border: 1px solid rgb(69, 72, 75);
+ }
+
+#painting_list .painting_cell .painting_img img{
+	position: relative;
+	height: 400px;
+	width: 100%;
+ 	z-index: -2;
+}
+
+#painting_list .painting_cell .painting_text{
+ 	position: relative;
+ 	z-index: -1;
+ 	height: 100px;
+ 	background-color: rgba(0, 0, 0, 0.3);
+ 	margin-top: -105px;
+}
+
+
+/*----------------------- End of Painting Cell -----------------------*/
+
+
+/***
+ *
+ *painter cell
+ *
+ * **/
+
+#painter{
+	width: 100%;
+	margin-top: 70px;
+}
+
+#painter .painter_title{
+	font-size: 60px;
+	color: rgb(69, 72, 75);
+	margin-left: 30px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+.painter_cell{
+ 	display: inline-block;
+ 	width: 20%;
+ 	height: 400px;
+ 	margin: 50px 31px;
+ 	border: 1px solid rgb(69, 72, 75);
+}
+
+
+.painter_cell .painter_img img{
+ 	position: relative;
+ 	height: 400px;
+ 	width: 100%;
+ 	clip:rect(10% 10% 10% 10%);
+ 	z-index: -2;
+}
+
+
+.painter_cell .painter_text{
+ 	position: relative;
+ 	z-index: -1;
+ 	height: 150px;
+ 	background-color: rgba(0, 0, 0, 0.3);
+ 	margin-top: -154px;
+}
+
+.painter_cell .painter_text p{
+ 	color: white;
+ 	padding: 5px 10px;
+ 	margin: 0;
+}
+
+.painter_cell .painter_text p.painter_intro{
+	font-size: 13px;
+}
+
+ .painter_cell:hover{
+ 	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+/*----------------------- End of Painter Cell -----------------------*/
+
+/***
+ *
+ * Blog Part
+ *
+ * **/
+.blog{
+	text-align: center;
+	padding: 0 200px;
+}
+
+.blog .blog_img img{
+	/*width: 80%;*/
+	height: 200;
+}
+
+.blog .blog_foreword p{
+	color: grey;
+	font-style:italic;
+	padding-top: 30px;
+
+}
+
+.blog .blog_text p.blog_en,.blog_cn{
+	text-align:justify;
+	padding: 30px 150px;
+	line-height: 150%;
+	font-size: 20px;
+}
+
+
+/*----------------------- End of Blog -----------------------*/
+
+
+/***
+ *
+ * login part
+ *
+ * **/
+#login{
+	margin: 30px 0 70px 0;
+	padding: 0;
+
+}
+
+#login_box{
+	margin: 0 400px;
+	text-align: center;
+}
+
+#login_box .login_title{
+	display: inline-flex;
+}
+
+#login_box .login_title p{
+	font-size: 50px;
+	font-weight: 650;
+	padding: 0 20px;
+}
+
+#login_box .login_title p.login_chinart{
+	font-family: Harukaze;
+	letter-spacing: 3px;
+}
+
+#login_box .login_form ul{
+	border: 2px solid rgb(69, 72, 75);
+	margin: 0 0 50px 0;
+}
+
+#login_box .login_form ul li{
+	margin: 10px;
+	padding: 20px 0;
+	font-size: 30px;
+	color: rgb(69, 72, 75);
+}
+
+#login_box .login_form .checkButton{
+	width: 150px;
+	height: 50px;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: rgb(69, 72, 75);
+	margin-right: 50px;
+	font-size: 20px;
+	color: white;
+}
+
+
+#login_box .login_form input{
+	height: 20px;
+	width: 200px;
+	font-size: 20px;
+	padding:  10px;
+}
+
+#login_box .login_form .checkButton:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+ /*----------------------- End of login -----------------------*/
+
+
+/***
+ *
+ * admin part
+ *
+ * **/
+
+#admin{
+	margin:70px auto;
+	text-align: center;
+}
+
+#admin h1{
+	font-size: 40px;
+	line-height: 150%;
+	margin-bottom: 60px;
+	color: rgb(69, 72, 75);
+}
+
+#admin #admin_perform li.current_update{
+	background-color: rgb(69, 72, 75);
+}
+
+#admin #admin_perform li.current_update a{
+	color: white;
+}
+
+#admin #admin_perform li{
+	border: 1.5px solid rgb(69, 72, 75);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 50px 20px;
+	font-size: 20px;
+	display: inline;
+}
+
+#admin #admin_perform li:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: rgb(69, 72, 75);
+}
+
+#admin #admin_perform li:hover a{
+	color: white;
+}
+
+#update{
+	margin: 20px 300px;
+}
+
+#update #update_box .update_form ul{
+	border: 2px solid rgb(69, 72, 75);
+	margin-bottom: 30px;
+}
+
+#update #update_box .update_form ul li{
+	margin: 10px;
+	padding: 20px 0;
+	font-size: 16px;
+	color: rgb(69, 72, 75);
+}
+
+#update #update_box .update_form input[type=text]{
+	height: 20px;
+	width: 200px;
+	font-size: 20px;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+#update #update_box .update_form input[type=text].input_text{
+	width: 400px;
+}
+
+#update #update_box .update_form input[type=radio]{
+	margin: 10px 5px;
+	padding: 20px 0;
+
+}
+
+#update #update_box .update_form .button{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#update #update_box .update_form .checkButton{
+	width: 150px;
+	height: 50px;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: rgb(69, 72, 75);
+	font-size: 20px;
+	color: white;
+}
+
+#update #update_box .update_form .checkButton:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+}
+
+ /*----------------------- End of admin -----------------------*/
+
+
+/***
+ *
+ * about & contact
+ *
+ * **/
+ #about{
+ 	margin: 50px 350px;
+ }
+
+ .about_title{
+ 	text-align: center;
+ }
+
+ .about_text{
+ 	padding: 30px 50px;
+ }
+
+ .contact{
+ 	display: inline-flex;
+ }
+
+ .contact .us{
+ 	width: 300px;
+ 	margin-right: 20px;
+ 	padding: 30px 50px;
+ }
+
+ .contact .us img{
+ 	width: 200px;
+ }
+
+  /*----------------------- End of about & contact -----------------------*/
+
+
+ /***
+  *
+  * Footer
+  *
+  * **/
+
+#footer{
+	position: relative;
+  	bottom: 0;
+  	width: 100%;
+  	height: 100px;
+  	background-color: rgb(69, 72, 75);
+}
+
+#footer #footer_img{
+	text-align: center;
+}
+
+#footer #footer_img ul{
+	display: inline-flex;
+	margin: 0;
+	padding: 15px 0 0 0;
+}
+
+#footer #footer_img li{
+	color: white;
+	text-align: center;
+	bottom: 0;
+	padding: 0 20px;
+}
+
+#footer #footer_img li i{
+	font-size: 20px;
+	margin: 0;
+	color: white;
+	padding-bottom: 0;
+}
+
+#footer p{
+	color: white;
+	text-align: center;
+	line-height: 170%;
+	margin: 0;
+}
+
+
+
+/*----------------------- End of Footer -----------------------*/
